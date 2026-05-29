@@ -1,57 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Política de Privacidad - LATOR Player</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | LATOR Player</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a30;
+      --text: #f3f6ff;
+      --muted: #b7c2dd;
+      --accent: #4da3ff;
+      --border: #23304f;
+    }
 
-<style>
-body{
-font-family:Arial,sans-serif;
-max-width:900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-h1,h2{
-color:#2563eb;
-}
-</style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #08101f 0%, #0d1730 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .card {
+      background: rgba(18, 26, 48, 0.96);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 24px 14px 40px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p, li {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Política de Privacidad de LATOR Player</h1>
+      <p class="meta"><strong>Última actualización:</strong> 29 de mayo de 2026</p>
 
-<h1>Política de Privacidad — LATOR Player</h1>
+      <p>
+        <span class="brand">LATOR Player</span> es un reproductor multimedia diseñado para acceder a TV en vivo,
+        películas y series mediante un servicio autorizado configurado por el usuario o por su proveedor.
+      </p>
 
-<p>Última actualización: Mayo 2026</p>
+      <p>
+        <span class="brand">LATOR Player</span> funciona únicamente como reproductor multimedia y no proporciona,
+        aloja ni distribuye contenido propio.
+      </p>
 
-<p>LATOR Player es un reproductor multimedia diseñado para acceder a TV en vivo, películas y series mediante servicios autorizados configurados por el usuario o por su proveedor.</p>
+      <h2>1. Información que se almacena localmente</h2>
+      <p>La aplicación puede almacenar localmente en el dispositivo información necesaria para su funcionamiento, incluyendo:</p>
+      <ul>
+        <li>URL del servicio configurado</li>
+        <li>usuario del servicio</li>
+        <li>token de sesión o contraseña necesaria para autenticación</li>
+        <li>perfiles creados dentro de la app</li>
+        <li>favoritos</li>
+        <li>progreso de reproducción</li>
+        <li>preferencias y configuraciones</li>
+        <li>metadatos de funciones offline compatibles</li>
+        <li>archivos compatibles almacenados localmente para visualización posterior dentro de la app</li>
+      </ul>
 
-<h2>Información recopilada</h2>
+      <p>
+        Los datos sensibles de sesión se almacenan usando almacenamiento protegido del dispositivo cuando la plataforma lo permite.
+      </p>
 
-<p>La aplicación puede almacenar localmente:</p>
+      <h2>2. Información enviada al servicio configurado</h2>
+      <p>
+        Cuando el usuario inicia sesión o utiliza la aplicación, <span class="brand">LATOR Player</span> envía al servicio autorizado
+        configurado la información necesaria para:
+      </p>
+      <ul>
+        <li>autenticar la cuenta</li>
+        <li>solicitar catálogo</li>
+        <li>solicitar imágenes y metadatos</li>
+        <li>solicitar fuentes de reproducción</li>
+        <li>solicitar funciones compatibles de visualización posterior cuando el servicio las soporte</li>
+      </ul>
 
-<ul>
-<li>Credenciales necesarias para autenticación</li>
-<li>Perfiles</li>
-<li>Favoritos</li>
-<li>Progreso de reproducción</li>
-<li>Preferencias de usuario</li>
-<li>Metadatos de descargas compatibles</li>
-</ul>
+      <p>Esto puede incluir:</p>
+      <ul>
+        <li>URL del servicio</li>
+        <li>usuario</li>
+        <li>contraseña o token</li>
+        <li>solicitudes normales de uso relacionadas con navegación y reproducción</li>
+      </ul>
 
-<h2>Uso de datos</h2>
+      <h2>3. Analítica, publicidad y terceros</h2>
+      <p>
+        Con base en la revisión actual del código, no se identificaron SDKs de analítica, publicidad o medición de terceros
+        como Firebase Analytics, Crashlytics, Sentry, Mixpanel o similares.
+      </p>
 
-<p>Los datos son utilizados únicamente para permitir el funcionamiento correcto de la aplicación.</p>
+      <p>
+        La app sí se comunica con el servicio configurado por el usuario y con los hosts utilizados por ese servicio para imágenes,
+        reproducción y funciones compatibles.
+      </p>
 
-<h2>Compartición de información</h2>
+      <h2>4. Funciones offline</h2>
+      <p>
+        Las funciones offline dependen de la compatibilidad del servicio utilizado. Cuando estén disponibles, el contenido compatible
+        puede almacenarse localmente en el dispositivo para reproducción posterior dentro de la app.
+      </p>
 
-<p>LATOR Player no vende información personal ni comparte datos con plataformas publicitarias.</p>
+      <h2>5. Aviso de seguridad</h2>
+      <p>
+        Si el servicio configurado por el usuario utiliza HTTP en lugar de HTTPS, existe riesgo de tráfico de red sin cifrar entre
+        el dispositivo y dicho servicio.
+      </p>
 
-<h2>Contacto</h2>
+      <h2>6. Responsabilidad sobre el contenido</h2>
+      <p>
+        <span class="brand">LATOR Player</span> no proporciona ni aloja contenido. El usuario es responsable de utilizar únicamente
+        servicios y contenidos para los que existan derechos, licencias o autorizaciones válidas.
+      </p>
 
-<p>Email: privacy@latorapps.com</p>
+      <h2>7. Enlaces legales</h2>
+      <p>
+        Términos de uso:
+        <a href="https://latorapps.com/terms.html" target="_blank" rel="noopener noreferrer">
+          https://latorapps.com/terms.html
+        </a>
+      </p>
 
+      <h2>8. Contacto</h2>
+      <p>Para consultas relacionadas con privacidad, soporte o información general, puedes escribir a:</p>
+      <ul>
+        <li>
+          Privacidad:
+          <a href="mailto:privacy@latorapps.com">privacy@latorapps.com</a>
+        </li>
+        <li>
+          Soporte:
+          <a href="mailto:support@latorapps.com">support@latorapps.com</a>
+        </li>
+        <li>
+          Información general:
+          <a href="mailto:info@latorapps.com">info@latorapps.com</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
